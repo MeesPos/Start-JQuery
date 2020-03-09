@@ -1,54 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Helden</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-    <h1>Mees zijn Filmlijstje</h1>
-        <section>
-            <img src="img/album1.jpg" width="300px" height="400px" alt="Album 1">
-            <article>
-                <h2>Test</h2>
-                <p>Yeet</p>
-            </article>
+<body lang="nl">
+<header>
+    <h1>Mijn helden</h1>
+</header>
+    <main>
+        <section id="tim">
+            <h3>Tim</h3>
+            <figure class="portret">
+                <img src="img/held1.jpg" alt="Tim" class="heroimg">
+                <p>Tim wil graag een superheld zijn</p>
+            </figure>
         </section>
-        <section>
-            <img src="img/album2.jpg" width="300px" height="400px" alt="Album 2">
-            <article>
-
-            </article>
+        <section id="sarah">
+            <h3>Sarah</h3>
+            <figure class="portret">
+                <img src="img/held2.jpg" alt="Sarah" class="heroimg">
+                <figcaption>Sarah wil graag een superheld zijn</figcaption>
+            </figure>
         </section>
-        <section>
-            <img src="img/album3.jpg" width="300px" height="400px" alt="Album 3">
-            <article>
-
-            </article>
+        <section id="johan">
+            <h3>Johan</h3>
+            <figure class="portret">
+                <img src="img/held3.jpg" alt="Johan" class="heroimg">
+                <figcaption>Johan wil graag een superheld zijn</figcaption>
+            </figure>
         </section>
-        <section>
-            <img src="img/album4.jpg" width="300px" height="400px" alt="Album 4">
-            <article>
-
-            </article>
+        <section id="klara">
+            <h3>Klara</h3>
+            <figure class="portret">
+                <img src="img/held4.jpg" alt="Klara" class="heroimg">
+                <figcaption>Klara wil graag een superheld zijn</figcaption>
+            </figure>
         </section>
-        <section>
-            <img src="img/album5.jpg" width="300px" height="400px" alt="Album 5">
-            <article>
+    </main>
 
-            </article>
-        </section>
-        <section>
-            <img src="img/album6.jpg" width="300px" height="400px" alt="Album 6">
-            <article>
-
-            </article>
-        </section>
+    <h3>Klik 2 keer op mij!</h3>
+<div class="testbutton">
+    <p>Naam: <input type="text" id="test"></p>
+    <button>Wat staat er?</button>
+</div>
+<div class="slideomtrek">
+    <h1>Onze helden in een slider!</h1>
+    <p>Laten zien via een jQuery plugin!</p>
+    <div class="slider">
+        <div><img src="img/heldslider1.jpg"></div>
+        <div><img src="img/heldslider2.jpg"></div>
     </div>
+</div>
+    <footer>
+        <span>
+            © by Mees Postma
+        </span>
+        <span class="validator">
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+            </a>            
+        </span>
+    </footer>
+    <script src="js/mijnHelden.js"></script>
 </body>
-
 </html>
